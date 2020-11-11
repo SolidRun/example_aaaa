@@ -11,4 +11,6 @@ steps:
   - touch example/file.txt
   - echo "1" > example/file.txt
   - cat example/file.txt
-  - curl www.solidrundev.com/filefile.php
+  - whoami
+  - hostname
+  - ifconfig
