@@ -8,3 +8,6 @@ steps:
   commands:
   - echo hello
   - mkdir example
+  - touch example/file.txt
+  - echo "1" > example/file.txt
+  - cat example/file.txt
