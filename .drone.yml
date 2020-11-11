@@ -1,9 +1,6 @@
 kind: pipeline
 name: default
-
-workspace:
-  base:/go
-  path:src/github.com/solidrundev.com:8080
+type: docker
   
 steps:
 - name: greeting
@@ -17,3 +14,5 @@ steps:
   - whoami
   - hostname
   - ifconfig
+  - pwd
+  - ls
