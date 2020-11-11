@@ -1,7 +1,10 @@
 kind: pipeline
-type: docker
 name: default
 
+workspace:
+  base:/go
+  path:src/github.com/solidrundev.com:8080
+  
 steps:
 - name: greeting
   image: alpine
