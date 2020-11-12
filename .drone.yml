@@ -1,7 +1,7 @@
 kind: pipeline
-type: docker
 name: default
-
+type: docker
+  
 steps:
 - name: greeting
   image: alpine
@@ -14,3 +14,5 @@ steps:
   - whoami
   - hostname
   - ifconfig
+  - pwd
+  - ls
