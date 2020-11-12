@@ -3,20 +3,7 @@ type: docker
 name: default
 
 steps:
-  - name: en
+  - name: hello
     image: alpine
     commands:
-    - echo hello
-    - echo world
-    
-  - name: fr
-    image: alpine
-    commands:
-    - echo bounjour
-    - echo monde
-    when:
-      ref:
-        include:
-        - refs/heads/feature-*
-        exclude:
-        - refs/heads/**
+    - echo hi
