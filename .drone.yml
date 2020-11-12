@@ -1,10 +1,9 @@
 kind: pipeline
 name: default
-type: docker
+type: ssh
   
 platform:
   os: linux
-  arch: amd64
 
 steps:
 - name: greeting
