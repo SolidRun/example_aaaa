@@ -1,12 +1,22 @@
 kind: pipeline
-name: default
 type: docker
-  
-platform:
-  os: linux
+name: default
 
 steps:
-- name: greeting
-  image: alpine
-  commands:
-  - echo hello
+  - name: en
+    image: alpine
+    commands:
+    - echo hello
+    - echo world
+    
+  - name: fr
+    image: alpine
+    commands:
+    - echo bounjour
+    - echo monde
+    when:
+      ref:
+        include:
+        - refs/heads/feature-*
+        exclude:
+        - refs/heads/**
