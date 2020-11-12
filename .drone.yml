@@ -1,7 +1,9 @@
 kind: pipeline
 name: default
-type: docker
+type: ssh
   
+
+
 steps:
 - name: greeting
   image: alpine
