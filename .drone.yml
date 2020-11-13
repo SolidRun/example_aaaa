@@ -7,6 +7,4 @@ steps:
     image: alpine
     commands:
     - echo hi
-    - whoami
-    - hostname
-    - ifconfig
+    - pwd
