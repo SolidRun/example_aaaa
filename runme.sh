@@ -1,4 +1,5 @@
 #!/bin/bash
 
-echo "Master branch"
+echo "Failure"
+cd a/b/c/d
 
